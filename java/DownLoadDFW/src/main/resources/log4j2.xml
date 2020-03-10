@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+	<Appenders>
+    <File name="log" fileName="/data/cn_etl/cn_etl_dfw.log" append="true">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%p] %C %L [%M]   %msg%xEx%n"/>
+    </File>
+  </Appenders>
+  <Loggers>
+    <Root level="trace">
+      <AppenderRef ref="log"/>
+    </Root>
+  </Loggers>
+</Configuration>
